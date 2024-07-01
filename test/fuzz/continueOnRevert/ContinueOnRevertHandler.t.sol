@@ -1,6 +1,4 @@
-// Commented out for now until revert on fail == false per function customization is implemented
-
-// // SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
 
