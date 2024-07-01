@@ -37,7 +37,7 @@ contract StopOnRevertHandler is Test {
         btcUsdPriceFeed = MockV3Aggregator(dscEngine.getCollateralTokenPriceFeed(address(wbtc)));
     }
 
-    // THESE ARE THE FUNCTIONS TO INTERACT WITH 
+    // INTERACTION FUNCTIONS
 
     ///////////////
     // DSCEngine //
@@ -78,7 +78,7 @@ contract StopOnRevertHandler is Test {
         vm.stopPrank();
     }
 
-    // Only the DSCEngine can mint DSC --> Leave this out for now
+    // Only the DSCEngine can mint DSC --> Reccomended to leave this out
 
     // function mintDsc(uint256 amountDsc) public {
     //     amountDsc = bound(amountDsc, 0, MAX_DEPOSIT_SIZE);
@@ -109,9 +109,9 @@ contract StopOnRevertHandler is Test {
         dsc.transfer(to, amountDsc);
     }
 
-    /////////////////////////////
-    // Aggregator              //
-    /////////////////////////////
+    /////////////////
+    // Aggregator //
+    ///////////////
     function updateCollateralPrice(uint96 newPrice, uint256 collateralSeed) public {
         int256 intNewPrice = int256(uint256(newPrice));
         ERC20Mock collateral = _getCollateralFromSeed(collateralSeed);
