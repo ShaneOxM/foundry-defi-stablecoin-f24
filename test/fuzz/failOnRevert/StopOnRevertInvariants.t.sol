@@ -12,6 +12,8 @@ import { ERC20Mock } from "@openzeppelin/contracts/mocks/ERC20Mock.sol";
 import { StopOnRevertHandler } from "./StopOnRevertHandler.t.sol";
 import { console } from "forge-std/console.sol";
 
+
+
 contract StopOnRevertInvariants is StdInvariant, Test {
     DSCEngine public dsce;
     DecentralizedStableCoin public dsc;
