@@ -8,7 +8,7 @@ import {ERC20Mock} from "@openzeppelin/contracts/mocks/ERC20Mock.sol";
 
 /*
  * @title HelperConfig 
- * @notice Thuis script is used to retreive network-specific configuration and the deployer's private key to deploy contracts
+ * @notice This script is used to retreive network-specific configuration and the deployer's private key to deploy contracts
  * @dev This mock setup creates controlled environments for testing, ensuring realistic simulations without using real assets
  */
 
